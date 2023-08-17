@@ -6,7 +6,8 @@
 	"description": "Filters specified portions of text from a web page.",
 	"permissions": [
 		"activeTab",
-		"tabs"
+		"tabs",
+		"storage"
 	  ],
 	"icons": {
 		"48": "icons/icon-32.png"
