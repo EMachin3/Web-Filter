@@ -2,27 +2,33 @@
 	"manifest_version": 2,
 	"name": "Text Filter",
 	"version": "1.0",
-
 	"description": "Filters specified portions of text from a web page.",
 	"permissions": [
 		"activeTab",
 		"tabs",
 		"storage"
-	  ],
+	],
+	"browser_specific_settings": {
+		"gecko": {
+			"id": "fhajkls@fjkcas.com"
+		}
+	},
 	"icons": {
 		"48": "icons/icon-32.png"
 	},
-
 	"browser_action": {
-  	    "default_icon": "icons/icon-32.png",
-	    "default_title": "Text Filter",
-	    "default_popup": "popup/configure_filter.html"
-	  },
-
+		"default_icon": "icons/icon-32.png",
+		"default_title": "Text Filter",
+		"default_popup": "popup/configure_filter.html"
+	},
 	"content_scripts": [
 		{
-			"matches": ["https://www.gnu.org/"],
-			"js": ["app.js"]
+			"matches": [
+				"https://www.gnu.org/"
+			],
+			"js": [
+				"app.js"
+			]
 		}
 	]
 }
